@@ -1,0 +1,52 @@
+body {font-family: Arial;}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #FFE4E1;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #F08080;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.header .image {
+    background: url("http://placehold.it/64x64") 
+                no-repeat;
+    width: 206px;
+    height: 135px;
+}
+
+.header .text {
+    font: x-large sans-serif;
+
+}
+
+.header .image, 
+.header .text {
+    display: inline-block;
+    vertical-align: bottom;
+}
