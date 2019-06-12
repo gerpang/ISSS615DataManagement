@@ -22,6 +22,21 @@ A. Using MySQL database, create the tables for this reporting system, load the d
 B. Derive DML SQL statements to answer 3 questions
 C. Develop a web reporting system (using PHP for the administrator of the Government Directory System)
 
+## To Use
+(With MYSQL Workbench editor; you can use any other editor/command line to communicate with the database server.)
+1. Start WAMP/MAMP server and make sure that MySQL service is runnning
+2. Launch MySQL Workbench
+3. Set up a new connection 
+    - Default password for Windows: empty (Port 3306)
+    - Default password for Mac: root (Port 8889)
+4. Connect the connection you have just created on MySQL workbench with MySQL server
+5. Create a database/schema. Create and load tables using the `DDL.sql` script. 
+6. Use the `script.sql` to run 3 different queries OR use `QueryPage.php` to run the web reporting system. 
+    - (On Windows) PHP files have to be stored in `c:\wamp64\www\`
+    - (On Mac) PHP files have to be stored in the `/Library/WebServer/Documents/localhost`. (Note: Web Sharing must be enabled.)
+    - Then open your webserver and call `http://localhost/QueryPage.php` to run.
+
+
 #### Reporting System Functions 
 1. Staff Job History Query 
 

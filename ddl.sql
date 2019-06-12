@@ -118,18 +118,19 @@ CONSTRAINT SPEECH_fk3 FOREIGN KEY (Presenter, JobId, PostDate) REFERENCES P_ASSI
 
 
 -- LOAD
-LOAD DATA LOCAL INFILE 'D:\\G1T03\\data\\department.txt' INTO TABLE department FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE 'D:\\G1T03\\data\\dept_transit.txt' INTO TABLE dept_transit FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE 'D:\\G1T03\\data\\job.txt' INTO TABLE job FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE 'D:\\G1T03\\data\\political_job.txt' INTO TABLE p_job FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE 'D:\\G1T03\\data\\non_political_job.txt' INTO TABLE np_job FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE 'D:\\G1T03\\data\\non_political_job_skills.txt' INTO TABLE np_job_skills FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE 'D:\\G1T03\\data\\staff.txt' INTO TABLE staff FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE 'D:\\G1T03\\data\\same_staff.txt' INTO TABLE same_staff FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE 'D:\\G1T03\\data\\political_staff.txt' INTO TABLE p_staff FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE 'D:\\G1T03\\data\\non_political_staff.txt' INTO TABLE np_staff FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE 'D:\\G1T03\\data\\non_political_staff_skills.txt' INTO TABLE np_staff_skills FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE 'D:\\G1T03\\data\\political_assignment.txt' INTO TABLE p_assignment FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE 'D:\\G1T03\\data\\non_political_assignment.txt' INTO TABLE np_assignment FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE 'D:\\G1T03\\data\\event.txt' INTO TABLE t_event FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE 'D:\\G1T03\\data\\speech.txt' INTO TABLE speech FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+-- Change path name accordingly. 
+LOAD DATA LOCAL INFILE '/Users/geri/ghrepos/ISSS615DataManagement/datadepartment.txt' INTO TABLE department FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '/Users/geri/ghrepos/ISSS615DataManagement/datadept_transit.txt' INTO TABLE dept_transit FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '/Users/geri/ghrepos/ISSS615DataManagement/datajob.txt' INTO TABLE job FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '/Users/geri/ghrepos/ISSS615DataManagement/datapolitical_job.txt' INTO TABLE p_job FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '/Users/geri/ghrepos/ISSS615DataManagement/datanon_political_job.txt' INTO TABLE np_job FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '/Users/geri/ghrepos/ISSS615DataManagement/datanon_political_job_skills.txt' INTO TABLE np_job_skills FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '/Users/geri/ghrepos/ISSS615DataManagement/datastaff.txt' INTO TABLE staff FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '/Users/geri/ghrepos/ISSS615DataManagement/datasame_staff.txt' INTO TABLE same_staff FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '/Users/geri/ghrepos/ISSS615DataManagement/datapolitical_staff.txt' INTO TABLE p_staff FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '/Users/geri/ghrepos/ISSS615DataManagement/datanon_political_staff.txt' INTO TABLE np_staff FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '/Users/geri/ghrepos/ISSS615DataManagement/datanon_political_staff_skills.txt' INTO TABLE np_staff_skills FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '/Users/geri/ghrepos/ISSS615DataManagement/datapolitical_assignment.txt' INTO TABLE p_assignment FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '/Users/geri/ghrepos/ISSS615DataManagement/datanon_political_assignment.txt' INTO TABLE np_assignment FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '/Users/geri/ghrepos/ISSS615DataManagement/dataevent.txt' INTO TABLE t_event FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '/Users/geri/ghrepos/ISSS615DataManagement/dataspeech.txt' INTO TABLE speech FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
